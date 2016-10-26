@@ -1,0 +1,78 @@
+.wiki-boxes
+{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.wiki-boxes.left:before,
+.wiki-boxes.right:before,
+.wiki-boxes.left:after,
+.wiki-boxes.right:after
+{
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
+
+.wiki-boxes.left
+{
+    float: left;
+}
+
+.wiki-boxes.right
+{
+    float: right;
+}
+
+.wiki-boxes.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wiki-boxes .sign
+{
+    float: left;
+    max-width: 10%;
+    width: 10%;
+    background-size: 100%;
+    background-color: white;
+}
+
+.wiki-boxes.ltr .sign
+{
+    border-right: 1px solid black;
+}
+
+.wiki-boxes.rtl .sign
+{
+    border-left: 1px solid black;
+}
+
+.wiki-boxes .sign.info
+{
+    background-image: url("/assets/wiki_boxes/info.svg");
+}
+
+.wiki-boxes .sign.hint
+{
+    background-image: url("/assets/wiki_boxes/hint.svg");
+}
+
+.wiki-boxes .sign.question
+{
+    background-image: url("/assets/wiki_boxes/question.svg");
+}
+
+.wiki-boxes .sign.warn
+{
+    background-image: url("/assets/wiki_boxes/warn.svg");
+}
+
+.wiki-boxes .sign.alert
+{
+    background-image: url("/assets/wiki_boxes/alert.svg");
+}
+
